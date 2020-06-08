@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1470175369463-7bb9f41e614b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.weather-title {
+  font-size: 6em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgba(220, 18, 18, 0.728);
+  text-shadow: 1px 5px 10px rgba(0,0,0,.5);
+}
+
+.city-container {
+  z-index: -1;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgb(184, 184, 184);
+}
+
+input {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #eee;
+  z-index: 999;
+}
+
+input::placeholder {
+  color:#fff;
+  font-weight: 500;
+}
+
+/* WEATHER DATA  */
+
+.city-name {
+  color:rgba(220, 18, 18, 0.728);
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.city-temp {
+  color:rgba(220, 18, 18, 0.728);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.city-temp sup {
+  font-size: 1.25rem;
+}
+
+.degrees {
+  margin-bottom: 1rem;
+}
+
+.city-meta {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.meta-data {
+  padding: 1rem;
+}
+
+.meta-data ul {
+  list-style: circle;
+}
+
+.meta-data ul li {
+  margin: .25rem;
+}
+
+.meta-data ul li span {
+  color: #000;
+  font-weight: bold;
+}
+
+.city-container img {
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 2rem auto;
+  box-shadow: 1px 5px 8px #aeaeae;
+}
+
